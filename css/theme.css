@@ -1,0 +1,115 @@
+:root{
+  /* Theme vars default for white*/
+     --primary-background:#373537 ;
+--secondary-background:#f0f2f2; /* for section and containers view as colour style, of HTML ( main / parent components ) */
+
+  --navigation-button:#868080;
+
+     --secondary-border-color: rgb(149, 152, 161)  ;
+  --main-button-background:  #d1cbac ;
+      --main-button-text:#2a2b2a;
+    --main-button-hover:#e8e2b5 ;
+
+
+    --main-border-color: #e8e8e8 ;
+
+      --page-background-color:#fff ;/* root html view background and colour */
+
+
+--questions-back:#eff7fb;
+}
+body.dark-mode { /* css theme property sets when `dark-mode ` style classes gets added via event / dom method from JavaScript ( to make other components as well change its state from light to darker using same implementation from root color  settings ( vars  ) which I will enable by setting body attribute / dom class as this code block states when theme option is on via user preference set on event handler */
+
+
+/* Theme vars dark mode default dark style  */
+
+--primary-background:rgb(49, 45, 47);
+--secondary-background:#191b1f ;
+--navigation-button: #343232;
+
+
+      --main-button-background:#40413e;
+
+
+ --main-button-hover:#7b786a ;
+
+
+      --main-button-text:#f2f2f2;
+
+
+        --main-border-color: #3e3e3e;
+
+
+
+--page-background-color:#232728 ;
+
+
+  --questions-back: rgb(50, 48, 48);
+
+
+}
+/* Toggle switch style part , on style selection to view*/
+
+
+.switch {
+position: relative;
+
+display: inline-block ;
+width: 40px;
+height:20px;
+
+cursor: pointer; /* mouse cursor style on view hover changes */
+}
+.switch input {
+
+opacity:0 ;
+
+width:0;
+
+height:0 ;
+
+}
+.slider {
+position:absolute ;
+cursor: pointer;
+ top:0 ;
+ left: 0;
+    right: 0 ;
+bottom: 0;
+ background-color: var(--main-border-color);
+
+transition: 0.2s ; /* animate  the movement  to enable better visualization on ui from browser interactions when you touch components */
+
+
+  border-radius:20px;
+
+}
+
+.slider:before{
+
+position:absolute ;
+  content:"" ;
+
+transition: 0.2s ;
+height: 15px;
+    width: 15px;
+
+background-color: var(--main-button-text);
+
+  border-radius: 50% ;
+    left: 4px;
+
+bottom: 3px;
+}
+
+
+input:checked + .slider {
+background-color:#d9ff94 ; /* on checking with style changes color to these set css variables*/
+
+}
+
+input:checked + .slider:before {
+
+background: var(--primary-background); /* on the checking and activation make it another view type  to show a slider moving type , css style with  variables on different elements using styles to show on off switch, by properties from javascript event based actions on current element dom types via their attribute set on UI . these styles makes use of current settings of light to dark set from style attributes to switch the themes on HTML. and view changes smoothly */
+ transform: translateX(20px);
+}

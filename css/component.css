@@ -1,0 +1,31 @@
+/* common css parts on view using tag or CSS properties and methods */
+.styled-btn{
+
+
+  background-color:#dedddd ;
+ 
+     border:none ;
+ 
+   padding: 12px 22px;
+       color: #3c3b3b ;
+ 
+    border-radius:6px;
+         text-align:center ;
+           text-decoration: none;
+         cursor:pointer ;
+    display: inline-block ; /* allow other side elements / objects or tags show inline (horizontal) instead vertical one and uses from flex if need different spacing properties when horizontal content flow need adjustment  */
+   font-size:0.9rem ;
+ 
+       transition: background 0.2s ;
+  }
+ 
+ 
+    .styled-btn:hover{ /* setting when mouse moves and focus it to provide a good visual responsive view experience */
+ 
+   background:#dad8d8 ;
+    }
+  .material-icons{  /* style implementation of material icons tag from dom parts with sizes ( can have diff, set size as required using  html element css)  , these settings/ layout provide control from javascript */
+    display:inline-block;
+    font-size:1.1rem;
+ 
+  }

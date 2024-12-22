@@ -1,0 +1,137 @@
+  /* question.css*/
+
+  .question-card {
+
+    padding: 1.5rem;
+      background-color:  var(--questions-back)  ;  /* colour specific based on type or html structure using the current them for better representation */
+
+         border-radius: 8px;
+
+  box-shadow:0 1px 4px rgba(0,0,0,0.2) ;
+
+ transition: transform 0.3s, box-shadow 0.2s, background 0.2s ; /* for smooth loading using CSS transition properties */
+
+      position: relative ;
+
+        z-index:10 ;  /* z index with its parent structure of components, HTML order stack view of a document */
+
+
+  }
+
+
+.question-card:hover {
+
+
+    transform:scale(1.02);
+
+
+      box-shadow:0 4px 10px rgba(0,0,0,0.2)  ;
+  }
+
+ .question-card:not(:last-child)
+{
+
+ margin-bottom:20px;   /* space out or distance based layouts for every specific html elements */
+  }
+
+
+.question-title {
+  font-size: 1.2rem ;
+
+ font-weight: 500 ;
+      margin:0;
+         padding:0 ;
+
+ }
+  .question-text {
+
+        margin:0.4rem 0;
+
+    padding:0 ;
+
+ line-height: 1.4;
+     white-space: pre-wrap;
+
+}
+   .code-container{
+         padding:0.6rem;
+      margin: 1.2em 0;
+
+overflow-x:auto ;
+      border:1px solid #f0ecec; /* visual highlight codes  text to different from other textual  contents by visual property styles from html with component rules/styles with css, with code component rendering format too using fonts or color properties / formatting by spacing elements , to keep visually better user layout as a component  for  correct user understanding / interaction when layout changes via actions during user behaviour on DOM ( such with click or new actions, html layouts rendering parts/ new content showing ) from client.*/
+
+     font-family: 'Courier New', monospace;
+  border-radius: 4px;
+
+      background-color:#e6e0da;
+
+
+    white-space:pre;
+      font-size: 0.9rem ;
+
+  }
+
+
+.answer{
+
+
+       border:1px solid  var(--secondary-border-color) ;   /* different  view styles of list type with borders set from parent to  different type components and reusable as such visual element/layout in multiple place of projects by variable settings as its properties on the whole framework using those variables to create theme  for different html rendering parts  of various views. also helps to get consistent views , based on color selections */
+ 
+   margin:0.8rem 0;
+
+
+     font-weight:400 ;
+       font-size:1.1em ;
+
+
+ }
+
+
+   .answer> p {
+        margin: 0.3em 0;
+           padding: 1em;
+
+     line-height: 1.5 ;
+          white-space: pre-wrap ;
+          overflow-x:auto;  
+
+      }
+
+ .card-meta {
+    font-size: 0.8em ;
+
+         font-weight: bold;
+
+      padding:0;
+       display: flex;
+        flex-wrap:wrap;
+           gap:10px;
+
+       margin: 1.1rem 0 0;
+      align-items: flex-end ; /* alignment of items on its view element with css ( vertical end using flex-property in this component which uses space between and the  aligned at the base layout as css properties or settings for view.)    */
+    justify-content: space-between;
+
+
+}
+
+ .card-meta>div {
+
+       padding:0; /* default css values for html content view component structure   */
+ 
+ font-size: 1rem;
+  color:#868381 ;
+      }
+
+
+  .card-meta  span {
+
+     border-bottom:1px solid  ;  /* bottom  text styles to see data more clean or as per HTML specific property, it also shows HTML structured view or information in details for data parts , so correct styles or html attribute/ view properties with that styling.  and layout settings  */
+     color:#3e435c ;
+}
+
+ .card-meta  img {  /* card section to have layout with view with styling parts*/
+     max-width:70px ;
+        border-radius:4px;
+
+
+      }
